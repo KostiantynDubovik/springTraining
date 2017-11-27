@@ -1,0 +1,24 @@
+group 'payments'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile group: 'junit', name: 'junit', version: '4.12'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+	compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+	compile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
+	compile group: 'org.springframework', name: 'spring-context', version: '5.0.1.RELEASE'
+	compile group: 'org.springframework', name: 'spring-context-support', version: '5.0.1.RELEASE'
+	compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.1.RELEASE'
+	compile group: 'org.springframework', name: 'spring-tx', version: '5.0.1.RELEASE'
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.9.1'
+	compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
