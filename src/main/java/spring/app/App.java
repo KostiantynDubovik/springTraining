@@ -23,10 +23,10 @@ public class App {
 	private static Properties properties;
 	private static ConfigurableApplicationContext context;
 
-	private Client client;
-	private EventLogger defaultLogger;
-	private int eventCount;
-	private Map<EventType, EventLogger> loggerMap;
+	private final Client client;
+	private final EventLogger defaultLogger;
+	private final int eventCount;
+	private final Map<EventType, EventLogger> loggerMap;
 
 	public App(Client client, EventLogger defaultLogger, int eventCount, Map<EventType, EventLogger> loggerMap) {
 		this.client = client;
